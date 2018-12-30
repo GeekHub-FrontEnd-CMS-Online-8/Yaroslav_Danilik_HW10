@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>OptimizedHTML 4</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<!-- Template Basic Images End -->
+	
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#000">
+	<!-- Custom Browsers Color End -->
+
+	<link rel="stylesheet" href="css/main.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Damion" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+</head>
+
+<body style="background-image: url(img/bg-5.png)">
+
+	<!-- Custom HTML -->
+<header class="header">
+	<nav class="navigation">
+		<div class="logo"><a href="index.html"><span class="logo__text">acrostia</span></a></div>
+		<ul class="wrapper">
+			<li><a href="index.html" class="wrapper__item5">Home</a></li>
+			<li><a href="services.html" class="wrapper__item5">Services</a></li>
+			<li><a href="about.html" class="wrapper__item5">About</a></li>
+			<li><a href="work.html" class="wrapper__item5">Work</a></li>
+			<li><a href="contacts.html" class="wrapper__item5">Contacts</a></li>
+		</ul>
+	</nav>
+</header>
+<main>
+    <section class="contacts-holder">
+        <h1 class="contacts-holder__title">CONTACT US</h1>
+        <p class="contacts-holder__text">Cras suscipit porttitor porttitor. Morbi sit amet tincidunt sapien. Curabitur posuere lectus aliquet erat rutrum sollicitudin. In enim diam, ullamcorper quis libero et, ultricies commodo est. Quisque at ante vitae justo fermentum viverra ac eu justo. Ut luctus imperdiet lacus, eget laoreet erat posuere quis.</p>
+    </section>
+    <section class="contacts-container">
+        <div class="contacts-block">
+            <div class="contacts-block1">
+                <h2 class="contacts-block__title">Address</h2>
+                <h3 class="contacts-block__title2">Acrostia</h3>
+                <p class="contacts-block__text">Sevenoaks Rd</p>
+                <p class="contacts-block__text text-margin">Sevenoaks TN14 7HR, UK</p>
+                <p class="contacts-block__text2"><span class="contacts-block__span">Phone:</span> 	+44 555 555 555</p>
+                <p class="contacts-block__text2"><span class="contacts-block__span2">Fax:</span>		+44 556  555 555</p>
+                <p class="contacts-block__text2"><span class="contacts-block__span">E-mail:</span>	info@acrostia.com</p>
+                <p class="contacts-block__text2"><span class="contacts-block__span">Skype:</span>	Ac0stia</p>
+            </div>
+            <div id="map"></div>
+        </div>
+        <div class="contacts-block__form">
+            <h2 class="contacts-block__title title3">Ask a question</h2>
+            <form class="form">
+                <input type="text" name="user.name" placeholder="Name" class="form__item">
+                <input type="email" name="user.email" placeholder="Email" class="form__item">
+                <textarea name="question" cols="30" rows="10" placeholder="Your question" class="form__item2"></textarea><br>
+            </form>
+            <button type="button" class="form__btn">send</button>
+        </div>
+    </section>
+</main>
+<footer class="footer-container">
+    <div class="footer-block">
+        <a href="#"><img src="img/footer1.png" alt="FB" class="footer-block__img"></a>
+    </div>
+    <div class="footer-block">
+        <a href="#"><img src="img/footer2.png" alt="TW" class="footer-block__img"></a>
+    </div>
+    <div class="footer-block">
+        <a href="#"><img src="img/footer3.png" alt="GOO" class="footer-block__img"></a>
+    </div>
+    <div class="footer-block">
+        <a href="#"><img src="img/footer4.png" alt="IN" class="footer-block__img"></a>
+    </div>
+</footer>
+
+
+	<script src="js/scripts.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+<script>
+        function initMap() {
+            // The location of Uluru
+            var uluru = {lat: -17.344, lng: 111.036};
+            // The map, centered at Uluru
+            var map = new google.maps.Map(
+                document.getElementById('map'), {zoom: 4, center: uluru});
+            // The marker, positioned at Uluru
+            var marker = new google.maps.Marker({position: uluru, map: map});
+          }
+</script>
+<script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHDEagiGeGLJEn-PMdEEiPy8_AzsBTWts&callback=initMap">
+</script>
+</body>
+</html>

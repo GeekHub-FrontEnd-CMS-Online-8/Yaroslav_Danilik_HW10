@@ -1,0 +1,158 @@
+.wrapper__item4
+  color: #ffffff
+  font-family: Lato
+  font-size: 18px
+  font-weight: 400
+  line-height: 60px
+  margin:
+    right: 25px
+    left: 25px
+  padding:
+    left: 15px
+    right: 15px
+    top: 60px
+    bottom: 7px
+
+  &:hover
+    background-color: #a1ca6c
+    border-radius: 7px
+
+//main
+//section
+.work-holder
+  width: 80%
+  margin:
+    top: 190px
+    left: auto
+    right: auto
+
+  &__title
+    color: #ffffff
+    font-family: Lato
+    font-size: 60px
+    font-weight: 300
+    line-height: 58px
+    text-transform: uppercase
+
+  &__text
+    color: #ffffff
+    font-family: Lato
+    font-size: 14px
+    font-weight: 400
+    line-height: 24px
+
+//section2
+.work-portfolio
+  width: 80%
+  display: flex
+  justify-content: space-between
+  margin:
+    right: auto
+    left: auto
+    top: 58px
+  padding:
+    top: 43px
+    bottom: 43px
+  border:
+    top: 1px solid #94b963
+    bottom: 1px solid #94b963
+
+  &Block
+    display: flex
+    color: #ffffff
+    font-family: Lato
+    font-size: 20px
+    font-weight: 700
+    line-height: 24px
+    text-transform: uppercase
+
+    &__item
+      color: #ffffff
+      font-family: Lato
+      font-size: 16px
+      font-weight: 700
+      line-height: 24px
+      margin:
+        right: 32px
+        left: 32px
+
+      &:hover
+        background-color: #f5c149
+        padding: 5px
+        border-radius: 7px
+
+//gallery
+.cards
+  display: flex
+  flex-wrap: wrap
+  list-style: none
+  padding: 0
+  justify-content: space-between
+
+.card
+  display: flex
+  min-width: 260px
+  flex-direction: column
+  align-items: center
+  border-radius: 5px
+
+@media (max-width: 1000px)
+  .cards
+    justify-content: space-evenly
+
+
+@media (max-width: 600px)
+  .navigation
+    justify-content: space-evenly
+
+.work-job
+  border-radius: 5px
+  flex-basis: 260px
+  max-width: 260px
+  margin: 20px 0
+  position: relative
+  background: #3d4d29
+
+  &__img-wrap
+    font-size: 0
+
+
+  &:hover
+    .work-job__img
+      opacity: 0.5
+    &:after
+      position: absolute
+      content: url("../img/plus.png")
+      top: 75px
+      left: 105px
+
+  &__img
+    object-fit: cover
+    width: 260px
+    height: 200px
+    border-top-right-radius: 5px
+    border-top-left-radius: 5px
+
+  &__title
+    width: 100%
+    color: #727272
+    font-size: 14px
+    line-height: 58px
+    text-transform: uppercase
+    background-color: #eeeeee
+    border-bottom-right-radius: 5px
+    border-bottom-left-radius: 5px
+    position: relative
+
+    &:before
+      position: absolute
+      display: block
+      content: ''
+      width: 0
+      height: 0
+      top: -16px
+      left: 50%
+      margin-left: -18.5px
+      border-style: solid
+      border-width: 0 18.5px 19px 18.5px
+      border-color: transparent transparent #eee transparent

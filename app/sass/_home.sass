@@ -1,0 +1,131 @@
+.header
+  //background-image: url('../img/bg_home.png')
+  // background-repeat: no-repeat
+  // background-size: cover
+  // height: 1008px
+  position: absolute
+  top: 0
+  width: 100%
+  z-index: 100
+  &__container
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: center
+
+
+.logo
+  width: 50%
+
+  &__text
+    color: #ffffff
+    font-family: Damion
+    font-size: 50px
+    font-weight: 400
+    line-height: 60px
+
+
+.navigation
+  display: flex
+  justify-content: space-between
+  margin:
+    right: 250px
+    left: 250px
+  padding:
+    top: 25px
+
+.wrapper
+  display: flex
+
+  &__item
+    color: #ffffff
+    font-family: Lato
+    font-size: 18px
+    font-weight: 400
+    line-height: 60px
+    margin:
+      right: 25px
+      left: 25px
+    padding:
+      left: 15px
+      right: 15px
+      top: 60px
+      bottom: 7px
+
+    &:hover
+      background-color: #74c7d5
+      border-radius: 7px
+
+//Carousel
+.carousel
+  &-item img
+    width: 100%
+    height: auto
+
+  &-indicators--update
+    bottom: 90px !important
+    li
+      max-width: 20px !important
+      height: 20px !important
+      background-color: rgba(255,255,255, 0.5) !important
+      border-radius: 50%
+      margin: 0 20px !important
+
+    li.active
+      background-color: #74c7d5 !important
+
+  &-control-prev-icon--update,
+  &-control-next-icon--update
+    width: 50px !important
+    height: 50px !important
+
+  &-caption--update
+    bottom: 50% !important
+    margin-bottom: -70px !important
+
+  &__my-message-wrap
+   display: flex
+    justify-content: space-around
+
+  &__my-message 
+    display: flex
+    flex-wrap: wrap
+
+
+.container
+  max-width: 1200px
+  margin: 0 auto
+  padding: 0 15px
+
+.title
+  color: white
+  font-size: 60px
+  line-height: 58px
+  font-weight: 300
+  line-height: 1
+  text-transform: uppercase
+  &-header-big
+    font-size: 138px
+    line-height: 1
+    color: #74c7d5
+    margin: 0
+    line-height: 92px
+
+  &--header
+    color: #74c7d5
+    text-align: right
+    margin: 0
+    line-height: 50px
+
+  &--small
+    text-transform: none
+
+
+.subtitle
+  font-size: 20px
+  line-height: 58px
+  text-transform: uppercase
+
+
+.text
+  line-height: 24px
